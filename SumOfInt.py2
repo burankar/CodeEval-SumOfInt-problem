@@ -1,0 +1,17 @@
+#Author: Brian Urankar
+
+import sys
+
+my_file = open(sys.argv[1], 'r')
+numbers = []
+
+for line in my_file:
+	if line.strip():
+		n = int(line)
+		numbers.append(n)
+
+answer = sum(numbers)	
+my_file.close()
+
+print answer
+
